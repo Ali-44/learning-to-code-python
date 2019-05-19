@@ -1,0 +1,17 @@
+# hourly rate upto 40hrs
+#1.5 times horly rate for hours above 40
+#use 45 hours and rate of 10.50 per hour
+
+hrs=input('Enter Hours:')
+rate=input('Enter Rate:')
+fhrs=float(hrs)
+frate=float(rate)
+if fhrs <= 40:
+    pay=(fhrs*frate)
+elif fhrs > 40:
+    #normal pay
+    npay=(40*frate)
+    #overtime
+    ovpay=(fhrs-40)*(1.5*frate)
+    pay=npay +ovpay
+print(pay)
