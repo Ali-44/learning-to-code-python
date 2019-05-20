@@ -1,0 +1,21 @@
+#prompt for a score between 0.0 and 1.0.
+#If the score is out of range, print an error.
+#If the score is between 0.0 and 1.0, print a grade
+Score=input('Enter Score:')
+fScore=float(Score)
+if fScore >=1.0:
+    print('Error,out of range')
+    quit()
+elif fScore <=0.0:
+    print('Error,out of range')
+    quit()
+if fScore>=0.9:
+    print('A')
+elif fScore >=0.8:
+    print('B')
+elif fScore >=0.7:
+    print('C')
+elif fScore >=0.6:
+    print('D')
+elif fScore <0.6:
+    print('F')
